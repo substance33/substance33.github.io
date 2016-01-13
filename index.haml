@@ -1,0 +1,28 @@
+- @tabs = [{:c => 'checked', :tab => '1', :time => 'Physicist', :title => 'Physics is my day job', :schedule => 'Currently working at PSI',:description => 'I talk a bunch of rubbish', :icon => 'ion-nuclear'},{:c => 'false', :tab => '2', :time => 'Photographer', :title => 'I like to take pictures', :schedule => 'Landscapes in switzerland',:description => 'Let me explore with my camera!', :icon => 'ion-camera'},{:c => 'false', :tab => '3', :time => 'Developer', :title => 'I have some projects which I work on', :schedule => 'Find me on GitHub',:description => 'Look at my code', :icon => 'ion-social-github'},{:c => 'false', :tab => '4', :time => 'Human', :title => 'I live on earth', :schedule => 'Mostly Switzerland or England',:description => 'Try and catch me!', :icon => 'ion-arrow-graph-up-right'}]
+.left
+  .left_inner
+    %h1 Simon Ward
+    %h2 Taking my own path through this universe
+    %a.download{:href => 'https://www.psi.ch/lns/simon-ward',:target => '_blank'} 
+      <i class="icon ion-eye"></i> <span>View my work profile</span>
+    %a.follow{:href => 'https://www.psi.ch/lns/simon-ward',:target => '_blank'} 
+      <i class="icon ion-social-codepen-outline"></i> <span>Contact me</span>
+.right
+  .app
+    .app_inner
+      - @tabs.each do |i|
+        %input{:type => 'radio',:id => "tab-#{i[:tab]}",:name => 'buttons', :"#{i[:c]}" => ""}
+        %label{:for => "tab-#{i[:tab]}"}
+          .app_inner__tab
+            %h2 
+              #{i[:time]}
+            .tab_left
+              %i.icon.big{:class => "#{i[:icon]}"}
+              .tab_left__image
+                %i.icon{:class => "#{i[:icon]}"}
+            .tab_right
+              %h3 #{i[:title]}
+              %h4 #{i[:schedule]}
+              %p #{i[:description]}
+              %button{:href => 'https://www.psi.ch/lns/simon-ward',:target => '_blank'} <span>More Information</span>
+       
