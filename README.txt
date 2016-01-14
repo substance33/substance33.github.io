@@ -1,5 +1,7 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/anon/pen/vLJgbm.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/anon/pen/eJExoM.
 
- Another pure CSS UI Piece here using radio buttons for the active states
+ Nothing too fancy here, as always I like things clean and simple.  Featuring the infamous burger menu, some sliding panels and subtle hover animation.
 
-Forked from [Jamie Coulter](http://codepen.io/jcoulterdesign/)'s Pen [Funky Pure CSS Accordion](http://codepen.io/jcoulterdesign/pen/OMmZPd/).
+This was supposed to be the main nav for my redesigned portfolio, but I ditched it in favor of regular navigation,  the "say no to burger" articles got me :)) Hopefully the portfolio will be redesigned soon also, it is taking me ages!
+
+Forked from [Mirko Zorić](http://codepen.io/fluxus/)'s Pen [Fullscreen flexbox overlay navigation](http://codepen.io/fluxus/pen/gPWxXJ/).

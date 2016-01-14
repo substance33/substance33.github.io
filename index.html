@@ -2,10 +2,11 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Simon Ward</title>
+    <title>Fullscreen flexbox overlay navigation</title>
     
     
-    
+    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
         <link rel="stylesheet" href="css/style.css">
@@ -17,106 +18,46 @@
 
   <body>
 
-    <div class='left'>
-  <div class='left_inner'>
-    <h1>Simon Ward</h1>
-    <h2>Taking my own path through this universe</h2>
-    <a class='download' href='https://www.psi.ch/lns/simon-ward' target='_blank'>
-      <i class="icon ion-eye"></i> <span>View my work profile</span>
-    </a>
-    <a class='follow' href='https://www.psi.ch/lns/simon-ward' target='_blank'>
-      <i class="icon ion-social-codepen-outline"></i> <span>Contact me</span>
-    </a>
-  </div>
+    <div class="overlay-navigation">
+  <nav role="navigation">
+    <ul>
+      <li><a href="#" data-content="The beginning">Home</a>
+      </li>
+      <li><a href="https://wwww.psi.ch/lns" data-content="Curious?">Physicist</a></li>
+      <li><a href="https://github.com/substance33" data-content="I got game">Developer</a></li>
+      <li><a href="https://plus.google.com/111347408948086092638/photos/p/pub" data-content="Only the finest">Photographer</a></li>
+      <li><a href="https://www.psi.ch/lns/simon-ward" data-content="Don't hesitate">Contact</a></li>
+    </ul>
+  </nav>
 </div>
-<div class='right'>
-  <div class='app'>
-    <div class='app_inner'>
-      <input checked='' id='tab-1' name='buttons' type='radio'>
-      <label for='tab-1'>
-        <div class='app_inner__tab'>
-          <h2>
-            Physicist
-          </h2>
-          <div class='tab_left'>
-            <i class='big icon ion-nuclear'></i>
-            <div class='tab_left__image'>
-              <i class='icon ion-nuclear'></i>
-            </div>
-          </div>
-          <div class='tab_right'>
-            <h3>Physics is my day job</h3>
-            <h4>Currently working at PSI</h4>
-            <p>I talk a bunch of rubbish</p>
-            <button href='http://codepen.io/jcoulterdesign/' target='_blank'><span>More Information</span></button>
-          </div>
-        </div>
-      </label>
-      <input false='' id='tab-2' name='buttons' type='radio'>
-      <label for='tab-2'>
-        <div class='app_inner__tab'>
-          <h2>
-            Photographer
-          </h2>
-          <div class='tab_left'>
-            <i class='big icon ion-camera'></i>
-            <div class='tab_left__image'>
-              <i class='icon ion-camera'></i>
-            </div>
-          </div>
-          <div class='tab_right'>
-            <h3>I like to take pictures</h3>
-            <h4>Landscapes in switzerland</h4>
-            <p>Let me explore with my camera!</p>
-            <button href='http://codepen.io/jcoulterdesign/' target='_blank'><span>More Information</span></button>
-          </div>
-        </div>
-      </label>
-      <input false='' id='tab-3' name='buttons' type='radio'>
-      <label for='tab-3'>
-        <div class='app_inner__tab'>
-          <h2>
-            Developer
-          </h2>
-          <div class='tab_left'>
-            <i class='big icon ion-social-github'></i>
-            <div class='tab_left__image'>
-              <i class='icon ion-social-github'></i>
-            </div>
-          </div>
-          <div class='tab_right'>
-            <h3>I have some projects which I work on</h3>
-            <h4>Find me on GitHub</h4>
-            <p>Look at my code</p>
-            <button href='http://codepen.io/jcoulterdesign/' target='_blank'><span>More Information</span></button>
-          </div>
-        </div>
-      </label>
-      <input false='' id='tab-4' name='buttons' type='radio'>
-      <label for='tab-4'>
-        <div class='app_inner__tab'>
-          <h2>
-            Human
-          </h2>
-          <div class='tab_left'>
-            <i class='big icon ion-arrow-graph-up-right'></i>
-            <div class='tab_left__image'>
-              <i class='icon ion-arrow-graph-up-right'></i>
-            </div>
-          </div>
-          <div class='tab_right'>
-            <h3>I live on earth</h3>
-            <h4>Mostly Switzerland or England</h4>
-            <p>Try and catch me!</p>
-            <button href='http://codepen.io/jcoulterdesign/' target='_blank'><span>More Information</span></button>
-          </div>
-        </div>
-      </label>
+<section class="home">
+  <div class="welcome row">
+    <div class="portrait animated zoomIn">
+      <img src="https://avatars1.githubusercontent.com/u/2798086" alt="Simon Ward" />
+    </div>
+    <h1>Simon Ward</h1>
+    </welcome>
+    <div class="row row-centered">
+      <div class="col-md-3 col-centered">
+        <p class="introt"><i class="icon ion-briefcase"></i> &nbsp; Physicist</p>
+      </div>
+      <div class="col-md-3 col-centered">
+        <p class="introt"><i class="icon ion-location"></i>&nbsp;Zurich, CH</p>
+      </div>
     </div>
   </div>
-</div>
+
+  <div class="open-overlay">
+    <span class="bar-top"></span>
+    <span class="bar-middle"></span>
+    <span class="bar-bottom"></span>
+  </div>
+</section>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
     
     
   </body>
