@@ -581,11 +581,16 @@ Animation keyframes
   text-align: center;
 }
 .linkedin img {
-  border: 3px solid rgba(255, 255, 255, 0.33);
   width: 100%;
   max-width: 200px;
   height: auto;
 }
+.linkedin link {
+    width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
 .welcome {
   margin-bottom: 3.3em;
   text-align: center;
